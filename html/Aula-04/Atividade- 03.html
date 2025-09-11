@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula 04 - Formulários</title>
+    </head>
+    <body>
+        <h1><center> Atividade 3</center></h1>
+        <hr>
+<form action="processa.php" method="get">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" minlength="1"  maxlength="50" required placeholder="digite seu nome">  
+    <hr>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" input type="email" required placeholder="digite seu E-mail">
+    <hr>
+    <label for="password">Senha:</label>
+    <input type="password" required placeholder="digite sua senha"> 
+    <hr>
+    <label for="password">idade:</label>
+    <input type="number" idade="idade" input type="number" pattern="[1,120]+" title="Apenas number" required placeholder="digite sua idade">
+    <hr>
+    <label for="submit">Enviar:</label>
+    <input type="submit" value="Enviar">
+    </form>
+    </body>
+</html>

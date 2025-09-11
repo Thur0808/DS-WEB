@@ -1,0 +1,30 @@
+
+p{
+    font-size: 20px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+h2{
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    
+}
+tr:nth-child(even) { /* linhas pares */
+    background-color: white;
+    }
+    tr:nth-child(odd) { /* linhas ímpares */
+    background-color: gray;
+    }

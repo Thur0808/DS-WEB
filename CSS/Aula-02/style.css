@@ -1,0 +1,32 @@
+h1 {
+    text-shadow: 2px 2px 4px red;
+    }
+    h1 {
+        font-family: "Story Script", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      img {
+        border: 5px double red;
+        }
+        img {
+            border-radius: 15px; /* cantos arredondados */
+            }
+            table, th, td {
+                border: 1px solid black;
+                }
+                th, td {
+                    padding: 10px; /* espaço interno */
+                    text-align: center; /* centralizar texto */
+                    }
+                    th {
+                        background-color: #333;
+                        color: rgb(255, 91, 91);
+                        }
+                        table {
+                            width: 100%; /* ocupa toda a largura */
+                            }
+                            th, td {
+                                height: 40px; /* altura das células */
+                                }
+                        

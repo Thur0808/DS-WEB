@@ -1,0 +1,30 @@
+Situação A:
+Relacionamento: empregado possui cartão de ponto (chave primaria), 
+1:1 (um para um, ou seja único)
+
+Empregado (atributos): {ematricula (chave), enome, etel}
+
+Cartão de ponto (atributos): {cpnúmero (chave), cpmês}
+
+
+
+Situação B:
+Relacionameto: N empregados (muitos empregados) pertencem a um departamento, 
+1:N (ou seja muitos empregados para um departamento)
+
+Empregado (atributos): {ematricula (chave), enome, etel}
+
+Departamento(atributos): {dcódigo (chave), dnome}
+
+
+
+Situação C:
+Relacionamento: N alunos (muitos alunos) cursam M disciplinas (muitas disciplinas),
+N:M (ou seja muitos alunos cursam muitas disciplinas)
+
+Aluno (atributos): {amatricula (chave), anome, aidade.}
+Cursa: {dcódigo (chave), amtricula (chave)} 
+Disciplina (atributos): {dcódigo (chave), dnome}
+
+
+

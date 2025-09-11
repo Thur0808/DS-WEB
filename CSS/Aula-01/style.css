@@ -1,0 +1,53 @@
+  /*comentário em CSS */
+/*Seletores de Css */
+
+/* Seletor Universal 
+* {
+    color: brown;
+}*/
+
+
+/*Seletor Tag HTML*/
+p{
+    color: white;
+}
+
+/*Codigo da cor no formato hexadecimal
+body {
+    background-color: #354068;
+*/
+
+/*Codigo da cor no formato RGB
+body {
+    background-color: (20,210,120,0.1);
+
+
+body {
+    background-color: black;
+}
+/* Seletor Class*/
+.paragrafo-bolha{
+    color: black;
+}
+
+/*Seletor ID*/
+#paragrafo-henry{
+    color:rgb(0, 0, 0);
+}
+h1{
+    color: black;
+}
+
+body {
+    background: linear-gradient(to right, gray, white) 45%;
+}
+
+/* Radial Gradient
+body {
+    background: radial-gradient(to right, red, black, white);
+}*/
+
+div {
+    background-color: black;
+ }
+

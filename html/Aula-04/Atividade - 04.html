@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula 04 - Formulários</title>
+    </head>
+    <body>
+        <h1><center> Atividade 4</center></h1>
+        <hr>
+<form action="processa.php" method="get">
+    <label>Gênero:</label>
+    <input type="radio" id="masculino" name="genero" value= "masculino"
+required checked>
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="feminino" name="genero" value="feminino" required>
+    <label for="feminino">Feminino</label>
+    <hr>
+    <br>
+    <label>Interesses:</label>
+    <input type="checkbox" id="tecnologia" name="interesses" value="tec
+nologia">
+    <label for="tecnologia">Tecnologia</label>
+    <input type="checkbox" id="esportes" name="interesses" value="espor
+tes" checked>
+    <label for="esportes">Esportes</label >
+    <input type="checkbox" id="arte" name="interesses" value="arte">
+    <label for="arte">Arte</label>
+    <hr>
+    <br>
+    <h1>
+    <label for="carros">Escolha um carro:</label>
+    <br>
+    <select id="carros" name="carros[]" multiple>
+    <optgroup label="Sedans">
+    <option value="corolla">Toyota Corolla</option>
+    <option value="civic">Honda Civic</option>
+    </optgroup>
+    <optgroup label="SUVs">
+    <option value="crv">Honda CR-V</option>
+    <option value="rav4">Toyota RAV4</option>
+    </optgroup>
+    </select>
+    <br>
+    <hr> 
+    <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

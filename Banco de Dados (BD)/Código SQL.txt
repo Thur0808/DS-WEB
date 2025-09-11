@@ -1,0 +1,20 @@
+/* Lógico_4: */
+
+CREATE TABLE departamento (
+    nome VARCHAR,
+    codigo INTEGER
+);
+
+CREATE TABLE empregado (
+    matricula INTEGER PRIMARY KEY,
+    nome VARCHAR,
+    tel VARCHAR,
+    fk_departamento_codigo INTEGER
+);
+ 
+ALTER TABLE empregado ADD CONSTRAINT FK_empregado_2
+    FOREIGN KEY (fk_departamento_codigo???)
+    REFERENCES ??? (???)
+    ON DELETE RESTRICT;
+
+Código SQL
