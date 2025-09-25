@@ -1,0 +1,47 @@
+.menu{
+    position: fixed;
+    height: 50px;
+    width: 200px;
+    background-color: aqua;
+    top: 0px;
+    text-align: center;
+    align-content: center
+}
+
+.caixa{
+    position: relative;
+    height: 2000px;
+    width: 100px;
+    background-color: red;
+    top: 50px;
+    text-align: center;
+    align-content: center;
+}
+
+.caixa-absoluta{
+    height: 20px;
+    width: 20px;
+    
+}
+
+.sticky{
+    height: 50px;
+    width: 200px;
+    background-color: yellow;
+    position: sticky;
+    top: 0px;
+    margin: 100px 0px 0px 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.absoluta{
+    position: absolute;
+    background-color: green;
+    text-align: center;
+    align-content: center;
+    height: 50px;
+    width: 50px;
+    left: 40%;
+    top: 50%;
+}

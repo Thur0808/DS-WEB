@@ -1,0 +1,10 @@
+.caixa{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 20px;
+    right: 30px;
+    text-align: center;
+    align-content: center;
+}
