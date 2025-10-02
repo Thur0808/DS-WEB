@@ -1,0 +1,48 @@
+.Menu1{
+    background-color: red;
+    width: 1800px;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    align-content: center;
+}
+
+.inicial{
+    margin-left: -1500px;
+    margin-top: -250px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardapio{
+    margin-left: -750px;
+    margin-top: -30px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reservas{
+    margin-left: 750px;
+    margin-top: -30px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.promoções{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1450px;
+    margin-top: -25px;
+}
+
+.formuláriodeverificação{
+    margin-top: 30%;
+}
+
+.fundo{
+    background-color: rgb(rgb(124, 8, 8), rgb(128, 17, 0), rgb(124, 2, 2));
+    height: 200px;
+    width: 200px;
+}

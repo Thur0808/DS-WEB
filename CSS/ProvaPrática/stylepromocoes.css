@@ -1,0 +1,38 @@
+.Menu1{
+    background-color: red;
+    width: 1800px;
+    height: 100px;
+    position: fixed;
+    margin-top: -10px;
+    left: 0px;
+    text-align: center;
+    align-content: center;
+}
+
+.inicial{
+    margin-left: -1450px;
+    margin-top: -100px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardapio{
+    margin-left: -750px;
+    margin-top: -30px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reservas{
+    margin-left: 750px;
+    margin-top: -25px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.promoções{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1450px;
+    margin-top: -25px;
+}
