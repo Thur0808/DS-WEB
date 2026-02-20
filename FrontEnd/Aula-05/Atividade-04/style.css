@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #333;
+}
+
+#letra {
+  font-size: 100px;
+  margin: 20px 0;
+  color: #222;
+}
+
+#mensagem {
+  font-size: 20px;
+  height: 30px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  transform: scale(0.95);
+}

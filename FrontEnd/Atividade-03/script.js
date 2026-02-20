@@ -1,9 +1,8 @@
 var contadorItem = 0
 
-function adicionar() {
+function adicionar() { //começa a função de adicionar
 contadorItem++
 
-// Pegando valores
     let nome = document.getElementById("nome").value;
     let email = document.getElementById("email").value;
     let rm = document.getElementById("rm").value;
@@ -14,7 +13,6 @@ contadorItem++
     let novoItem = document.createElement("li");
     novoItem.innerHTML = conteudo;
 
-    // Atribuo o ID ao LI 
     novoItem.setAttribute("id", contadorItem);
 
     // Cria o botão de remover
