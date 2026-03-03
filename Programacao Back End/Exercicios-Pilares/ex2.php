@@ -49,3 +49,5 @@ echo "-------------------------<br/>";
 $PéDePano = new Cavalo();
 echo $PéDePano->falar() . "<br/>";
 echo $PéDePano->mover() . "<br/>";
+
+?>
