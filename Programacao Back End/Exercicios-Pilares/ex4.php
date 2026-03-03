@@ -55,3 +55,5 @@ $roupa->estoque = 10;
 
 $eletronico->verDados();
 $roupa->verDados();
+
+?>
