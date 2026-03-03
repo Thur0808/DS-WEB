@@ -24,7 +24,7 @@ class Carro extends Veiculo {
 class Moto extends Veiculo {
     public function acelerar(){
         // Moto acelera de 20 em 20
-        $novaVelocidade = $this->getVelocidade() + 150;
+        $novaVelocidade = $this->getVelocidade() + 160;
         $this->setVelocidade($novaVelocidade);
     }
 }
