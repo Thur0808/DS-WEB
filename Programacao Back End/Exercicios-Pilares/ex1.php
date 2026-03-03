@@ -4,6 +4,7 @@ class Pessoa
 {
     public $nome = "Arthur";
     public $idade = 17;
+    public $salario = 1621;
 
     public function calcularBonus()
     {
