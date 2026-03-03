@@ -2,9 +2,9 @@
 
 class Pessoa
 {
-    public $nome = "Arthur";
-    public $idade = 17;
-    public $salario = 1621;
+    public $nome;
+    public $idade;
+    public $salario;
 
     public function calcularBonus()
     {
@@ -13,22 +13,25 @@ class Pessoa
 
     public function verDados()
     {
-        echo get_class($this) . " - Salário: R$ ";
-        echo $this->salario + $this->calcularBonus();
-        echo "<br/>";
+        echo "Nome: " . $this->nome . "<br/>";
+        echo "Classe: " . get_class($this) . "<br/>";
+        echo "Salário com bônus: R$ " . ($this->salario + $this->calcularBonus()) . "<br/><br/>";
     }
 }
 
 class Funcionario extends Pessoa
 {
-    public $salario = 1621;
+    public function calcularBonus()
+    {
+        return 0; // Funcionário comum não tem bônus
+    }
 }
 
 class Desenvolvedor extends Funcionario
 {
     public function calcularBonus()
     {
-        return $this->salario * 0.10;
+        return $this->salario * 0.10; // 10% de bônus
     }
 }
 
@@ -36,16 +39,26 @@ class Gerente extends Funcionario
 {
     public function calcularBonus()
     {
-        return $this->salario * 0.20;
+        return $this->salario * 0.20; // 20% de bônus
     }
 }
 
-
-// Teste
+// Instanciando os objetos e atribuindo valores no final
 $funcionario = new Funcionario();
-$gerente = new Gerente();
-$dev = new Desenvolvedor();
+$funcionario->nome = "Bruno";
+$funcionario->salario = 1621;
 
+$gerente = new Gerente();
+$gerente->nome = "Enzo";
+$gerente->salario = 5000;
+
+$dev = new Desenvolvedor();
+$dev->nome = "Arthur";
+$dev->salario = 3000;
+
+// Exibe os dados
 $funcionario->verDados();
 $gerente->verDados();
 $dev->verDados();
+
+?>
