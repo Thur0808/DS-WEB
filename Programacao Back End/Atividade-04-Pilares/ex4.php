@@ -46,12 +46,12 @@ class Roupa extends Produto
 
 // Teste
 $eletronico = new Eletronico();
-$eletronico->preco = 1000;
-$eletronico->estoque = 3;
+$eletronico->preco = 5000;
+$eletronico->estoque = 10;
 
 $roupa = new Roupa();
-$roupa->preco = 200;
-$roupa->estoque = 10;
+$roupa->preco = 500;
+$roupa->estoque = 3;
 
 $eletronico->verDados();
 $roupa->verDados();
