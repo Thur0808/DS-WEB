@@ -1,15 +1,12 @@
-// Carrega os planos ao abrir a página
 document.addEventListener('DOMContentLoaded', carregarResumo)
 
 async function carregarResumo() {
     try {
-        // Faz a requisição para a API (ajuste a URL se necessário)
         const req      = await fetch('http://localhost/cafeteria-api/pedidos')
         const resposta = await req.json()
 
         const planos = resposta.data || []
 
-        // --- Tabela de Planos Cadastrados ---
         const divTabela = document.getElementById('ultimos-planos')
 
         if (planos.length === 0) {
@@ -17,8 +14,8 @@ async function carregarResumo() {
             return
         }
 
-        // Gera as linhas da tabela seguindo a ordem da sua imagem
-        const linhas = planos.map(p => `
+    
+        const linhas = planos.map( p => `
             <tr>
                 <td>${p.nome || p.cliente}</td>
                 <td>${p.categoria}</td>
@@ -31,7 +28,6 @@ async function carregarResumo() {
             </tr>
         `).join('')
 
-        // Monta a estrutura da tabela exatamente como na imagem
         divTabela.innerHTML = `
             <table class="tabela-estilizada">
                 <thead>
@@ -59,7 +55,6 @@ async function carregarResumo() {
     }
 }
 
-// Função para deletar (mantendo a base do seu projeto)
 async function deletarPlano(id) {
     if(!confirm("Deseja realmente deletar este plano?")) return
 
@@ -67,5 +62,5 @@ async function deletarPlano(id) {
         method: 'DELETE'
     })
     
-    carregarResumo() // Recarrega a lista
+    carregarResumo()
 }

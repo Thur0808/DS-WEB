@@ -1,6 +1,6 @@
-var divResposta        = document.getElementById('resposta')
-var inputNome          = document.getElementById('nome')
-var inputCategoria          = document.getElementById('categoria')
+var divResposta = document.getElementById('resposta')
+var inputNome = document.getElementById('nome')
+var inputCategoria = document.getElementById('categoria')
 var checkboxDisponivel = document.getElementById('disponivel')
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -24,8 +24,7 @@ async function getItens() {
         linhas += `
             <tr>
                 <td>
-                <input type="checkbox" ${estaMarcado} onclick="toggleDisponivel(${item.id}, this.checked)">
-                </td>
+                <input type="checkbox" ${estaMarcado} onclick="toggleDisponivel(${item.id}, this.checked)"></td>
                 <td>${item.nome}</td>
                 <td>${item.categoria_nome || item.categoria_id}</td>
                 <td><button onclick="deleteItens(${item.id})">Deletar</button></td>
